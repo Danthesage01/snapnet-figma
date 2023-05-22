@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <div className="div-wrapper">
       <div className="home">
-        <div className="home-text">
-          <h4>Image If</h4>
-          <h4>Snapchat</h4>
-          <h4>had events</h4>
-          <p>
+        <div className="home-paragraph">
+          <h2 className="same-heading">Image If</h2>
+          <h2 className="unique-heading">Snapchat</h2>
+          <h2 className="same-heading">had events</h2>
+          <p className="home-text">
             Easily host and share events with your friends across any social
             media
           </p>
@@ -18,7 +18,7 @@ const Home = () => {
         <img
           src={image}
           alt="image"
-          className="image"
+          className="home-image"
         />
         <button className="btn btn-1">🎉 Create my event </button>
       </div>

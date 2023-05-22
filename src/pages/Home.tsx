@@ -15,12 +15,14 @@ const Home = () => {
           </p>
           <button className="btn btn-2">🎉 Create my event </button>
         </div>
-        <img
-          src={image}
-          alt="image"
-          className="home-image"
-        />
-        <button className="btn btn-1">🎉 Create my event </button>
+        <div className="home-footer">
+          <img
+            src={image}
+            alt="image"
+            className="home-image"
+          />
+          <button className="btn btn-1">🎉 Create my event </button>
+        </div>
       </div>
     </div>
   );

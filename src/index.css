@@ -128,7 +128,7 @@ small,
 }
 
 h2 {
-  margin-top: 2rem;
+  margin-top: 0;
 }
 ul {
   padding: 0;
@@ -138,9 +138,7 @@ a {
   text-decoration: none;
 }
 
-/* img {
-  width: 100%;
-} */
+
 /*************
    Wrappers
 *************/
@@ -148,13 +146,13 @@ a {
 .div-wrapper {
   width: 90vw;
   max-width: var(--max-width);
-  margin: 2rem auto;
-  max-height: 10vh;
+  margin: 0 auto;
+  min-height:100vh ;
 }
 
 .home {
   text-align: center;
-
+  margin: 1.5rem 0;
 }
 
 .home-paragraph {
@@ -195,15 +193,12 @@ a {
 .btn-1 {
   margin: 0 auto;
   display: block;
+
 }
 .btn-2 {
   display: none;
 }
-/* @media screen and (min-width: 656px) {
-  .home-text{
-  width: 450px;
-}
-} */
+
 
 @media screen and (min-width: 1200px) {
   .div-wrapper {

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import image from "../assets/image.png";
 
 const Home = () => {
@@ -13,7 +14,12 @@ const Home = () => {
             Easily host and share events with your friends across any social
             media
           </p>
-          <button className="btn btn-2">🎉 Create my event </button>
+          <Link
+            to="/events"
+            className="btn btn-2"
+          >
+            🎉 Create my event{" "}
+          </Link>
         </div>
         <div className="home-footer">
           <img
@@ -21,7 +27,12 @@ const Home = () => {
             alt="image"
             className="home-image"
           />
-          <button className="btn btn-1">🎉 Create my event </button>
+          <Link
+            to="/events"
+            className="btn btn-1"
+          >
+            🎉 Create my event{" "}
+          </Link>
         </div>
       </div>
     </div>

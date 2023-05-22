@@ -138,16 +138,25 @@ a {
   text-decoration: none;
 }
 
-
 /*************
    Wrappers
 *************/
-
-.div-wrapper {
+.body {
+  background: white;
+}
+.div-wrapper,
+.event-wrapper {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  min-height:100vh ;
+  min-height: 100vh;
+}
+.event-wrapper {
+  background: white;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  min-height: 100vh;
 }
 
 .home {
@@ -175,7 +184,7 @@ a {
   fill: transparent;
 }
 
-.home-text{
+.home-text {
   width: 300px;
   margin: auto;
 }
@@ -188,21 +197,26 @@ a {
   padding: 0.5rem 2rem;
   color: var(--white);
   cursor: pointer;
-
 }
 .btn-1 {
   margin: 0 auto;
   display: block;
-
 }
 .btn-2 {
   display: none;
 }
 
+.event-heading {
+  color: #240d57;
+}
 
 @media screen and (min-width: 1200px) {
   .div-wrapper {
-    padding: 4rem 0;
+     padding: 4rem 0;
+  }
+  .event-wrapper {
+    display: grid;
+    place-items: center;
   }
   .home {
     width: 98vw;
@@ -219,23 +233,31 @@ a {
     align-items: end;
     text-align: right;
     order: 2;
-    
   }
   .btn-2 {
     display: block;
-    margin-top: 1rem ;
+    margin-top: 1rem;
     font-size: 1.5rem;
   }
   .btn-1 {
     display: none;
   }
-  .home-text{
-  width: 500px;
-}
-.home-paragraph h2 {
-  font-size: 3rem;
-  padding: 0;
-  margin: 0;
-  line-height: 1;
-}
+  .home-text {
+    width: 500px;
+  }
+  .home-paragraph h2 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+  }
+
+  .event {
+    width: 98vw;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -4rem;
+  }
 }

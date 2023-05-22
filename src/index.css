@@ -48,7 +48,7 @@
 
   /* typography */
   --headingFont: "Inconsolata", monospace;
-  --bodyFont: "Montserrat", sans-serif;
+  --bodyFont:  Helvetica, sans-serif;
   --smallText: 0.7em;
   /* rest */
   --backgroundColor: var(--grey-50);
@@ -144,8 +144,7 @@ a {
 .body {
   background: white;
 }
-.div-wrapper,
-.event-wrapper {
+.div-wrapper {
   width: 90vw;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -153,7 +152,7 @@ a {
 }
 .event-wrapper {
   background: white;
-  width: 90vw;
+  width: 100vw;
   max-width: var(--max-width);
   margin: 0 auto;
   min-height: 100vh;
@@ -167,11 +166,70 @@ a {
 .home-paragraph {
   text-align: center;
 }
+.event {
+  display: flex;
+  flex-direction: column;
+}
+.event-paragraph {
+  width: 100%;
+  padding: 0 1rem;
+  order: 1;
+}
+.event-paragraph h2,
+.event-paragraph p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.event-paragraph .date,
+.event-paragraph .location {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.event-paragraph p{
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.event-accent{
+  font-weight: bold;
+}
+.date img,
+.location img {
+  height: 3rem;
+  object-fit: cover;
+}
 .home-paragraph h2 {
   padding: 0;
   margin: 0;
 }
+.date {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+.location {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
 
+.event-text-2 {
+  margin-top: 0.5rem;
+  margin-left: -2rem;
+}
+.text-1 {
+  color: #240d57;
+  font-weight: bold;
+}
+.text-2 {
+  color: #240d57;
+  font-weight: bold;
+}
+.text-span-1 {
+  color: #4F4F4F;
+  font-weight: bold;
+}
 .home-paragraph .same-heading {
   color: #240d57;
   letter-spacing: -1.5px;
@@ -205,21 +263,29 @@ a {
 .btn-2 {
   display: none;
 }
+.btn-3 {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
 
 .event-heading {
   color: #240d57;
 }
 
-@media screen and (min-width: 1200px) {
-  .div-wrapper {
-     padding: 4rem 0;
-  }
+@media screen and (min-width: 676px) {
   .event-wrapper {
     display: grid;
     place-items: center;
   }
+}
+
+@media screen and (min-width: 1170px) {
+  .div-wrapper {
+    padding: 4rem 0;
+  }
   .home {
-    width: 98vw;
+    width: 90vw;
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
@@ -258,6 +324,15 @@ a {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin-top: -4rem;
+    flex-direction: row;
+    margin-top: 4rem;
   }
+
+  .event-paragraph {
+    width: 50%;
+    order: 0;
+  }
+  .event-paragraph p{
+  font-size: 1rem;
+}
 }

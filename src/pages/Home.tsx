@@ -13,13 +13,14 @@ const Home = () => {
             Easily host and share events with your friends across any social
             media
           </p>
-          <button className="btn-2">🎉 Create my event </button>
+          <button className="btn btn-2">🎉 Create my event </button>
         </div>
         <img
           src={image}
           alt="image"
+          className="image"
         />
-        <button className="btn-1">🎉 Create my event </button>
+        <button className="btn btn-1">🎉 Create my event </button>
       </div>
     </div>
   );

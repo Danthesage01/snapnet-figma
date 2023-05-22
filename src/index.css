@@ -48,7 +48,7 @@
 
   /* typography */
   --headingFont: "Inconsolata", monospace;
-  --bodyFont:  Helvetica, sans-serif;
+  --bodyFont: Helvetica, sans-serif;
   --smallText: 0.7em;
   /* rest */
   --backgroundColor: var(--grey-50);
@@ -166,6 +166,9 @@ a {
 .home-paragraph {
   text-align: center;
 }
+.home-paragraph-heading h2{
+  margin: 0;
+}
 .event {
   display: flex;
   flex-direction: column;
@@ -189,11 +192,11 @@ a {
   align-items: center;
 }
 
-.event-paragraph p{
+.event-paragraph p {
   font-size: 0.75rem;
   font-weight: 300;
 }
-.event-accent{
+.event-accent {
   font-weight: bold;
 }
 .date img,
@@ -227,8 +230,11 @@ a {
   font-weight: bold;
 }
 .text-span-1 {
-  color: #4F4F4F;
+  color: #4f4f4f;
   font-weight: bold;
+}
+.event-footer img{
+  width: 100%;
 }
 .home-paragraph .same-heading {
   color: #240d57;
@@ -259,6 +265,7 @@ a {
 .btn-1 {
   margin: 0 auto;
   display: block;
+  text-align: center;
 }
 .btn-2 {
   display: none;
@@ -271,6 +278,10 @@ a {
 
 .event-heading {
   color: #240d57;
+}
+
+.home-footer img {
+  width: 100%;
 }
 
 @media screen and (min-width: 676px) {
@@ -332,7 +343,7 @@ a {
     width: 50%;
     order: 0;
   }
-  .event-paragraph p{
-  font-size: 1rem;
-}
+  .event-paragraph p {
+    font-size: 1rem;
+  }
 }

@@ -7,9 +7,11 @@ const Home = () => {
     <div className="div-wrapper">
       <div className="home">
         <div className="home-paragraph">
-          <h2 className="same-heading">Image If</h2>
-          <h2 className="unique-heading">Snapchat</h2>
-          <h2 className="same-heading">had events</h2>
+          <div className="home-paragraph-heading">
+            <h2 className="same-heading">Image If</h2>
+            <h2 className="unique-heading">Snapchat</h2>
+            <h2 className="same-heading">had events</h2>
+          </div>
           <p className="home-text">
             Easily host and share events with your friends across any social
             media

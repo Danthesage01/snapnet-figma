@@ -7,10 +7,9 @@ import Birthday from "./pages/Event";
 function App() {
   return (
     <Router>
-
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="/birthday" element={<Birthday />} /> 
+        <Route path="/event" element={<Birthday />} /> 
         <Route path="*" element={<Error />} /> 
       </Routes>
     </Router>

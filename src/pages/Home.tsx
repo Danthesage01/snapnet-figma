@@ -19,7 +19,7 @@ const Home = () => {
           src={image}
           alt="image"
         />
-        <button className="btn">🎉 Create my event </button>
+        <button className="btn-1">🎉 Create my event </button>
       </div>
     </div>
   );

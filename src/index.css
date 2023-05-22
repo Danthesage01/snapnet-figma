@@ -138,7 +138,7 @@ a {
   text-decoration: none;
 }
 
-img{
+img {
   width: 100%;
 }
 /*************
@@ -146,7 +146,6 @@ img{
 *************/
 
 .div-wrapper {
-  /* width: 100%; */
   width: 90vw;
   max-width: var(--fixed-width);
   margin: 2rem auto;
@@ -158,32 +157,27 @@ img{
     linear-gradient(0deg, #fbfaff, #fbfaff);
 }
 
-.home-text{
+.home-text {
   text-align: center;
 }
-.btn{
-  background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+.btn-1 {
+  background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
   text-align: center;
   margin: 0 auto;
+}
+.btn-2{
   display: none;
 }
 @media screen and (min-width: 656px) {
 }
 
-.btn{
-  background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
-  text-align: center;
-  display: block;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 1200px) {
   .div-wrapper {
-  /* width: 95vw;
+    /* width: 95vw;
   max-width: var(--fixed-width);
   margin: 0 auto;
   padding: 4rem 0; */
-}
+  }
   .home {
     width: 95vw;
     max-width: var(--fixed-width);
@@ -192,15 +186,17 @@ img{
     justify-content: space-between;
     align-items: center;
   }
-  .home-text{
-  text-align: right;
-  order: 2;
+  .home-text {
+    text-align: right;
+    order: 2;
   }
-  .btn-2{
+  .btn-2 {
+    background: linear-gradient(90deg, #8456ec 3.25%, #e87bf8 100%);
+    text-align: center;
     display: block;
+    margin: 0 auto;
   }
-  .btn{
+  .btn-1 {
     display: none;
   }
 }
-

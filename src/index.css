@@ -137,15 +137,19 @@ ul {
 a {
   text-decoration: none;
 }
+
+img{
+  width: 100%;
+}
 /*************
    Wrappers
 *************/
 
 .div-wrapper {
-  width: 98vw;
+  /* width: 100%; */
+  width: 90vw;
   max-width: var(--fixed-width);
-  margin: 0 auto;
-  padding: 4rem 0;
+  margin: 2rem auto;
 }
 
 .home {
@@ -156,13 +160,10 @@ a {
 
 .home-text{
   text-align: center;
-  
-
 }
-.btn-2{
+.btn{
   background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
   text-align: center;
-  display: block;
   margin: 0 auto;
   display: none;
 }
@@ -177,6 +178,12 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
+  .div-wrapper {
+  /* width: 95vw;
+  max-width: var(--fixed-width);
+  margin: 0 auto;
+  padding: 4rem 0; */
+}
   .home {
     width: 95vw;
     max-width: var(--fixed-width);
